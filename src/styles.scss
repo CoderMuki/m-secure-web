@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Wallpoet&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+html, body { height: 100%; }
+
+:root {
+    --primary: #0e0025;
+    --secondary: #d56a00;
+    --text1: whitesmoke;
+    --icons: aliceblue;
+    --font1: "Wallpoet", sans-serif;
+    --font2: "Andika", sans-serif;
+    --popBg: rgba( 14, 0, 37, 0.25 );
+    --boxShadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+    --bckFiltr: blur(7px);
+    --darkerText: rgb(143, 142, 142);
+    --placeColor: rgb(67 66 66);
+    --darkIconBack: #35323ba8;
+    --fluro1: #00ffec;
+}
+
+body {
+    background-color: var(--primary);
+    height: 100vh;
+    p {margin: 0;} //!check
+}
+
+.fx-rw {
+    display: flex;
+    flex-direction: row;
+}
+
+.fx-cm {
+    display: flex;
+    flex-direction: column;
+}
+
+.fx-ctr {
+    align-items: center;
+    place-content: center;
+}
+
+.w-100 {
+    width: 100vw;
+}
+
+.w-80 {
+    width: 80vw;
+}
+
+.g1 {
+    gap: 1em;
+}
+
+.g2 {
+    gap: 2em;
+}

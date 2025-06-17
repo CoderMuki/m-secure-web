@@ -1,0 +1,27 @@
+.dev-main {
+    .header {
+        padding-top: 1.5em;
+        font-family: var(--font1);
+        color: var(--text1);
+        font-size: xxx-large;
+        .box {
+            width: 8em;
+            height: 2em;
+            border-radius: 0.2em;
+            background: var(--popBg);
+            backdrop-filter: var(--bckFiltr);
+            border: 1px solid var(--secondary);
+        }
+    }
+    .logo {
+        img {
+            height: 15em;
+            filter: drop-shadow(3px 3px 3px var(--secondary));
+        }
+    }
+    .dev-days {
+        font-family: var(--font2);
+        color: var(--text1);
+        font-size: larger;
+    }
+}
