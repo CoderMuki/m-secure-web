@@ -21,12 +21,12 @@ html, body { height: 100%; }
     --placeColor: rgb(67 66 66);
     --darkIconBack: #35323ba8;
     --fluro1: #00ffec;
+    --fluor4: #fffb00;
 }
 
 body {
     background-color: var(--primary);
     height: 100vh;
-    p {margin: 0;} //!check
 }
 
 .fx-rw {
@@ -44,6 +44,10 @@ body {
     place-content: center;
 }
 
+.fx-wp {
+    flex-wrap: wrap;
+}
+
 .w-100 {
     width: 100vw;
 }
@@ -52,10 +56,39 @@ body {
     width: 80vw;
 }
 
+.w-90 {
+    width: 90vw;
+}
+
+.g_4 {
+    gap: 0.4em;
+}
+
 .g1 {
     gap: 1em;
 }
 
 .g2 {
     gap: 2em;
+}
+
+
+// Keyframes
+
+@keyframes breathe {
+    0%,100% {
+        filter: drop-shadow(0 0 1px var(--secondary));
+    }
+    50% {
+        filter: drop-shadow(0 0 16px var(--secondary));
+    }
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
 }

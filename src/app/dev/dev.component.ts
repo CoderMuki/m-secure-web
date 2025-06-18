@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dev',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './dev.component.html',
   styleUrl: './dev.component.scss'
 })
-export class DevComponent implements OnInit{
+export class DevComponent implements OnInit, AfterViewInit{
 
-  noOfDays!: number;
+  ngAfterViewInit(): void {
+    this.countDown();
+  }
+
+  start = 0;
+  noOfDays: number = 0;
+  outputDays = 0;
 
   ngOnInit(): void {
     this.noOfDays = this.getDayDiff()
@@ -22,6 +28,17 @@ export class DevComponent implements OnInit{
     const miliscsDay = 1000 * 60 * 60 * 24;
     const differenceInDays = Math.floor(diffinms / miliscsDay);
     return differenceInDays;
+  }
+
+  countDown () {
+    const intervalId = setInterval(() => {
+      if(this.outputDays < this.noOfDays) {
+        this.outputDays++;
+      }else {
+        this.outputDays = this.noOfDays;
+        clearInterval(intervalId);
+      }
+    }, 45);
   }
 
 }
