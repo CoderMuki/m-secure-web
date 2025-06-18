@@ -83,12 +83,3 @@ body {
         filter: drop-shadow(0 0 16px var(--secondary));
     }
 }
-
-@keyframes move {
-    0% {
-        offset-distance: 0%;
-    }
-    100% {
-        offset-distance: 100%;
-    }
-}
