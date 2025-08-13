@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "m-s-e-c-u-r-e",
+    "public": "dist/m-secure-web/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
