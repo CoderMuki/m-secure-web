@@ -38,7 +38,7 @@ export class DevComponent implements OnInit, AfterViewInit{
         this.outputDays = this.noOfDays;
         clearInterval(intervalId);
       }
-    }, 45);
+    }, 30);
   }
 
 }
